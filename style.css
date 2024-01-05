@@ -145,7 +145,81 @@
 
 @media (max-width: 768px) {
 
-    .sidebar ul li a {
-        touch-action: manipulation; 
+
+    .sidebar{
+        position: absolute;
+        height: 60px;
+        width: 100vh;
+        background-color: #12171e;
+        transition: all 0.5s ease;
+ 
+    }
+    .main-content{
+        position: relative;
+        background-color: #eee;
+        min-height: 100vh;
+        top: 60px;
+        left: 0;
+        transition: all 0.5s ease;
+        width: calc(100% - 80px);
+        padding: 1rem;
+        opacity: 0;
+    }
+
+    .sidebar ul{
+        opacity: 0;
+    }
+
+    .sidebar .logo1{
+        opacity: 0;
+        display: none;
+    }
+
+    .sidebar .top .me{
+        opacity: 1;
+
+    }
+
+    .sidebar .top #btn{
+        left: 50%;
+    }
+
+    .sidebar .top {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+  
+
+    .sidebar.active #btn {
+        left: 90%;
+    }
+
+    .sidebar.active{
+        position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #12171e;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+    }
+
+    .sidebar.active #btn {
+        left: 90%;
+    }
+
+    .sidebar.active .top .me {
+        opacity: 1;
+        margin-left: 40px;
+    }
+
+    .sidebar.active .nav-item{
+        opacity: 1;
+    }
+
+    .sidebar.active .nav-item{
+        opacity: 1;
     }
 }

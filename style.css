@@ -145,7 +145,7 @@
 
 @media (max-width: 768px) {
 
-    .elemento {
+    .sidebar ul li a {
         touch-action: manipulation; 
     }
 }

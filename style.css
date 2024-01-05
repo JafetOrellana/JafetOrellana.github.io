@@ -141,3 +141,11 @@
     width: calc(100% - 80px);
     padding: 1rem;
 }
+
+
+@media (max-width: 768px) {
+
+    .elemento {
+        touch-action: manipulation; 
+    }
+}

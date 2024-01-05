@@ -10,41 +10,59 @@
 <body>
     <div class="sidebar">
         <div class="top">
-            <div class="logo">
-                <i class="bx bx-menu" id="btn"></i>
+            <div class="me">
                 <span>Jafet Orellana</span>
             </div>
+            <i class="bx bx-menu" id="btn"></i>
         </div>
+            <div class="logo1">
+                <img src="logo.png" alt="logo" class="logo-img">
+
+            </div>
         <ul>
             <li>
                 <a href="#">
                     <i class='bx bx-home-alt-2'></i>
-                    <span>Inicio</span>
+                    <span class="nav-item">Inicio</span>
                 </a>
                 <span class="tooltip">Inicio</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-user'></i>
-                    <span>Sobre mí</span>
+                    <span class="nav-item">Sobre mí</span>
                 </a>
                 <span class="tooltip">Sobre mí</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-code-alt' ></i>
-                    <span>Proyetos</span>
+                    <span class="nav-item">Proyetos</span>
                 </a>
                 <span class="tooltip">Proyetos</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bxs-contact' ></i>
-                    <span>Contactar</span>
+                    <span class="nav-item">Contactar</span>
                 </a>
                 <span class="tooltip">Contactar</span>
             </li>
         </ul>
     </div>
+
+    <div class="main-content">
+       <div class="container">
+        <h1>Hola mundo</h1>
+       </div> 
+    </div>
 </body>
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+</script>
 </html>

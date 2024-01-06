@@ -20,6 +20,7 @@
   padding: 0.4rem 0.8rem;
   transition: all 0.5s ease;
   white-space: nowrap;
+  overflow: auto;
 }
 
 .sidebar.active ~ .main-content {
@@ -29,6 +30,7 @@
 
 .sidebar.active {
   width: 200px;
+  overflow: auto;
 }
 
 .sidebar #btn {
@@ -143,6 +145,7 @@
     background-color: #12171e;
     transition: all 0.5s ease;
     font-size: 1.2em;
+    transition: all 0.5s ease;
   }
 
   .sidebar #btn {
@@ -185,6 +188,7 @@
   }
 
   .sidebar.active {
+    overflow: auto;
     font-size: 1.2em;
     position: absolute;
     top: 0;
@@ -202,6 +206,7 @@
     font-size: 1.2rem;
     line-height: 50px;
     transform: none;
+    transition: all 0.5s ease;
   }
 
   .sidebar.active .logo1 {
@@ -222,17 +227,18 @@
 
   .sidebar.active ~ .main-content {
     display: none;
+    opacity: 0;
   }
 
   .sidebar.active ul {
-    display: block;
+    display: inline-block;
     opacity: 1;
   }
 
   .sidebar.sidebar li {
     display: flex;
     justify-content: center;
-    margin-top: 40%;
+    margin-top: 9vh;
   }
 
   .sidebar.active .bottom {
@@ -240,5 +246,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .sidebar.active ul li a:hover {
+    background-color: transparent;
+    color: #fff;
   }
 }

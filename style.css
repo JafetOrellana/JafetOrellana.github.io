@@ -1,202 +1,193 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo-img{
-    width: 50px;
-    border-radius: 100%; 
-    background-color: rgb(255, 255, 255);  
+.logo-img {
+  width: 50px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
-.sidebar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 80px;
-    background-color: #12171e;
-    padding: 0.4rem 0.8rem;
-    transition: all 0.5s ease;
-     white-space: nowrap;
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: #12171e;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.5s ease;
+  white-space: nowrap;
 }
-
 
 .sidebar.active ~ .main-content {
-    left: 200px;
-    width: calc(100% -200px);
+  left: 200px;
+  width: calc(100% -200px);
 }
 
-.sidebar.active{
-    width: 200px;
+.sidebar.active {
+  width: 200px;
 }
 
 .sidebar #btn {
-    position: absolute;
-    color: #fff;
-    top: .4rem;
-    left: 50%;
-    font-size: 1.2rem;
-    line-height: 50px;
-    transform: translateX(-50%);
-    cursor: pointer;
+  position: absolute;
+  color: #fff;
+  top: 0.4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .sidebar.active #btn {
-    left: 90%;
+  left: 90%;
 }
 
-.sidebar .top .me{
-    color: #fff;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    pointer-events: none;
-    opacity: 0;
- 
+.sidebar .top .me {
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .sidebar.active .top .me {
-    opacity: 1;
-    margin-left: 40px;
+  opacity: 1;
+  margin-left: 40px;
 }
 
 .top .me i {
-    font-size: 2rem;
-    margin-right: 5px;
+  font-size: 2rem;
+  margin-right: 5px;
 }
-.logo1{
-    display: flex;
-    justify-content: center;
+.logo1 {
+  display: flex;
+  justify-content: center;
 }
 .sidebar ul li {
-    position: relative;
-    list-style-type: none;
-    height: 50px;
-    width: 90%;
-    margin: 0.8rem auto;
-    line-height: 50px;
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin: 0.8rem auto;
+  line-height: 50px;
 }
 
 .sidebar ul li a {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 0.8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
 }
 
 .sidebar ul li a:hover {
-    background-color: #fff;
-    color: #12171e;
+  background-color: #fff;
+  color: #12171e;
 }
 
 .sidebar ul li a i {
-    min-width: 50px;
-    text-align: center;
-    height: 50px;
-    border-radius: 12px;
-    line-height: 50px;
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
 }
 
-.sidebar .nav-item{
-    opacity: 0;
+.sidebar .nav-item {
+  opacity: 0;
 }
 
-.sidebar.active .nav-item{
-    opacity: 1;
+.sidebar.active .nav-item {
+  opacity: 1;
 }
 
-.sidebar ul li .tooltip{
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  padding: 0.4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}
+
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+}
+
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+
+.main-content {
+  position: relative;
+  background-color: #eee;
+  min-height: 100vh;
+  top: 0;
+  left: 80px;
+  transition: all 0.5s ease;
+  width: calc(100% - 80px);
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
     position: absolute;
-    left: 125px;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
-    border-radius: .6rem;
-    padding: .4rem 1.2rem;
-    line-height: 1.8rem;
-    z-index: 20;
-    opacity: 0;
-}
-
-.sidebar ul li:hover .tooltip{
-    opacity: 1;
-}
-
-.sidebar.active ul li .tooltip{
-    display: none;
-}
-
-.main-content{
+    height: 60px;
+    width: 100vw;
+    background-color: #12171e;
+    transition: all 0.5s ease;
+  }
+  .main-content {
     position: relative;
     background-color: #eee;
     min-height: 100vh;
-    top: 0;
-    left: 80px;
+    top: 60px;
+    left: 0;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
     padding: 1rem;
-}
+    opacity: 0;
+  }
 
+  .sidebar ul {
+    opacity: 0;
+  }
 
-@media (max-width: 768px) {
+  .sidebar .logo1 {
+    opacity: 0;
+    display: none;
+  }
 
+  .sidebar .top .me {
+    opacity: 1;
+  }
 
-    .sidebar{
-        position: absolute;
-        height: 60px;
-        width: 100vh;
-        background-color: #12171e;
-        transition: all 0.5s ease;
- 
-    }
-    .main-content{
-        position: relative;
-        background-color: #eee;
-        min-height: 100vh;
-        top: 60px;
-        left: 0;
-        transition: all 0.5s ease;
-        width: calc(100% - 80px);
-        padding: 1rem;
-        opacity: 0;
-    }
+  .sidebar .top #btn {
+    left: 50%;
+  }
 
-    .sidebar ul{
-        opacity: 0;
-    }
+  .sidebar .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .sidebar .logo1{
-        opacity: 0;
-        display: none;
-    }
+  .sidebar.active #btn {
+    left: 90%;
+  }
 
-    .sidebar .top .me{
-        opacity: 1;
-
-    }
-
-    .sidebar .top #btn{
-        left: 50%;
-    }
-
-    .sidebar .top {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-    }
-  
-
-    .sidebar.active #btn {
-        left: 90%;
-    }
-
-    .sidebar.active{
-        position: absolute;
+  .sidebar.active {
+    position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
@@ -204,22 +195,22 @@
     background-color: #12171e;
     padding: 0.4rem 0.8rem;
     transition: all 0.5s ease;
-    }
+  }
 
-    .sidebar.active #btn {
-        left: 90%;
-    }
+  .sidebar.active #btn {
+    left: 90%;
+  }
 
-    .sidebar.active .top .me {
-        opacity: 1;
-        margin-left: 40px;
-    }
+  .sidebar.active .top .me {
+    opacity: 1;
+    margin-left: 40px;
+  }
 
-    .sidebar.active .nav-item{
-        opacity: 1;
-    }
+  .sidebar.active .nav-item {
+    opacity: 1;
+  }
 
-    .sidebar.active .nav-item{
-        opacity: 1;
-    }
+  .sidebar.active .nav-item {
+    opacity: 1;
+  }
 }

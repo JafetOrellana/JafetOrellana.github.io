@@ -20,10 +20,11 @@
   background-color: #13181b;
   border-right: 3px solid #00b5e8;
   padding: 0.4rem 0.8rem;
-  transition: all 0.5s ease;
+  transition: width 0.5s ease; 
   white-space: nowrap;
   overflow-y: auto;
   overflow-x: hidden;
+
 }
 
 .sidebar.active ~ .main-content {
@@ -37,6 +38,10 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
+}
+
+.sidebar.active .top .me{
+  opacity: 1;
 }
 
 .sidebar #btn {
@@ -139,22 +144,31 @@
   min-height: 100vh;
   top: 0;
   left: 80px;
-  transition: all 0.5s ease;
   width: calc(100% - 80px);
   padding: 1rem;
   overflow: auto;
+  transition: left 0.5s ease, width 0.5s ease;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
   .sidebar {
-    position: absolute;
+    position: fixed;
     height: 60px;
     width: 100vw;
     background-color: #13181b;
     border-bottom: 3px solid #00b5e8;
     border-right: none;
-    transition: all 0.5s ease;
+    transition: height 0.5s ease;
     font-size: 1.2em;
+    overflow: hidden;
+    z-index: 20;
+    padding: 0rem 0.8rem;
+
+  }
+
+  .sidebar .nav-item {
+    opacity: 1;
   }
 
   .sidebar #btn {
@@ -164,14 +178,28 @@
     line-height: 50px;
     transform: none;
   }
-  .sidebar ul {
-    opacity: 0;
-    display: none;
-  }
 
   .sidebar .logo1 {
-    opacity: 0;
-    display: none;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebar .logo-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sidebar .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: slideUp-barBottom 0.5s ease forwards;
+  }
+
+  .sidebar .top{
+    border-top: 0.4rem solid #12171e;
   }
 
   .sidebar .top .me {
@@ -179,35 +207,48 @@
   }
 
   .sidebar .top {
+    position: relative;
+    background-color: #12171e;
+    z-index: 30;
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
   }
 
   .main-content {
+    top: 60px;
     position: relative;
+    z-index: 10;
     background-color: #323e48;
     height: calc(100% - 60px);
-    top: 60px;
     left: 0;
-    transition: all 0.5s ease;
     width: 100vw;
     padding: 1rem;
     opacity: 1;
     overflow: auto;
+   
+
   }
 
   .sidebar.active {
+    z-index: 20;
     overflow: auto;
     font-size: 1.2em;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
     background-color: #12171e;
-    padding: 0.4rem 0.8rem;
+    padding: 0rem 0.8rem;
+    border-bottom: none;
   }
+
+  .sidebar.active .top{
+    border-top: 0.4rem solid #12171e;
+  }
+
 
   .sidebar.active #btn {
     position: static;
@@ -224,8 +265,8 @@
   }
 
   .sidebar.active .logo-img {
-    width: 25%;
-    height: 25%;
+    width: 100px;
+    height: 100px;
   }
 
   .sidebar.active .nav-item {
@@ -234,11 +275,12 @@
   }
 
   .sidebar.active ~ .main-content {
-    top: 100vh;
+    position: relative;
     left: 0;
     display: block;
     width: auto;
     overflow: auto;
+    top: 60px;  
   }
 
   .sidebar.active ul {
@@ -257,10 +299,41 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: slideDown-barBottom 0.5s ease forwards;
   }
 
   .sidebar.active ul li a:hover {
     background-color: #12171e;
     color: #fff;
   }
+
+
+@keyframes slideDown-barBottom {
+  0% {
+    display: none;
+  }
+
+  1%{
+    display: flex;
+    transform: translateY(-100%);
+  }
+
+  100% {
+   transform: translateY(0%); 
+  }
+
+  
+}
+@keyframes slideUp-barBottom {
+0% {
+  display: block;
+
+}
+
+100% {
+  transform: translateY(-100%);
+  display: none;
+}
+
+}
 }

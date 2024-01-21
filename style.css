@@ -174,7 +174,7 @@
   .sidebar #btn {
     position: static;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 50px;
     transform: none;
   }
@@ -253,7 +253,7 @@
   .sidebar.active #btn {
     position: static;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 50px;
     transform: none;
   }

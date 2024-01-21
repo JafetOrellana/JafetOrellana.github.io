@@ -152,6 +152,7 @@
     width: 100vw;
     background-color: #13181b;
     border-bottom: 3px solid #00b5e8;
+    border-right: none;
     transition: all 0.5s ease;
     font-size: 1.2em;
   }
@@ -259,7 +260,7 @@
   }
 
   .sidebar.active ul li a:hover {
-    background-color: #fff;
-    color: #12171e;
+    background-color: #12171e;
+    color: #fff;
   }
 }

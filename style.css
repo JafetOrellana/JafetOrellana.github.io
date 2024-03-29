@@ -12,7 +12,7 @@
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -22,8 +22,9 @@
   padding: 0.4rem 0.8rem;
   transition: width 0.5s ease; 
   white-space: nowrap;
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  z-index: 1;
 
 }
 
@@ -122,17 +123,17 @@
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  background-color: #fff;
   border-radius: 0.6rem;
   padding: 0.4rem 1.2rem;
   line-height: 1.8rem;
   z-index: 20;
-  opacity: 0;
   display: none; /*solucionar problema con javascrpit*/
 }
-/* 
+
 .sidebar ul li:hover .tooltip {
-  opacity: 1;
-/* } /*  solucionar con javascript */
+  display: block;
+ } /*  solucionar con javascript */
 
 .sidebar.active ul li .tooltip {
   display: none;

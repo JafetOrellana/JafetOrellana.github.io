@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+
+body{
+  min-width: 768px;
+}
+
 .logo-img {
-  width: 50px;
+  width: 3.125rem;
   border-radius: 100%;
   border: 2px solid #00b5e8;
   background-color: rgb(255, 255, 255);
@@ -16,7 +21,7 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 80px;
+  width: 5rem;
   background-color: #13181b;
   border-right: 3px solid #00b5e8;
   padding: 0.4rem 0.8rem;
@@ -28,14 +33,14 @@
 
 }
 
-.sidebar.active ~ .main-content {
-  left: 200px;
+.sidebar.active ~ main {
+  /* left: 200px;
   width: calc(100% - 200px);
-  height: 100vh;
+  height: 100vh; */
 }
 
 .sidebar.active {
-  width: 200px;
+  width: 12.5rem;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
@@ -51,7 +56,7 @@
   top: 0.4rem;
   left: 50%;
   font-size: 1.2rem;
-  line-height: 50px;
+  line-height: 3.125;
   transform: translateX(-50%);
   cursor: pointer;
 }
@@ -63,7 +68,7 @@
 .sidebar .top .me {
   color: #fff;
   display: flex;
-  height: 50px;
+  height: 3.125rem;
   width: 100%;
   align-items: center;
   pointer-events: none;
@@ -82,10 +87,10 @@
 .sidebar ul li {
   position: relative;
   list-style-type: none;
-  height: 50px;
+  height: 3.125rem;
   width: 90%;
   margin: 0.8rem auto;
-  line-height: 50px;
+  line-height: 3.125rem;
 }
 
 .sidebar ul li a {
@@ -102,11 +107,11 @@
 }
 
 .sidebar ul li a i {
-  min-width: 50px;
+  min-width: 3.125rem;
   text-align: center;
-  height: 50px;
-  border-radius: 12px;
-  line-height: 50px;
+  height: 3.125rem;
+  border-radius: 0.75rem;
+  line-height: 3.125rem;
 }
 
 .sidebar .nav-item {
@@ -119,7 +124,7 @@
 
 .sidebar ul li .tooltip {
   position: absolute;
-  left: 125px;
+  left: 7.8125rem;
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
@@ -138,19 +143,60 @@
 .sidebar.active ul li .tooltip {
   display: none;
 }
-
-.main-content {
-  position: relative;
-  background-color: #323e48;
+/*Contenido principal*/
+main {
+  top: 3.625rem;
+  position: absolute;
+  background: rgb(9,43,80);
+  background: linear-gradient(180deg, rgba(9,43,80,1) 0%, rgba(2,29,59,1) 16%, rgba(2,6,23,1) 100%);
+  height: calc(100% - 58px);
+  left: 0;
+  width: 100vw;
+  padding: 1rem;
+  opacity: 1;
+  overflow: auto;
   min-height: 100vh;
   top: 0;
-  left: 80px;
-  width: calc(100% - 80px);
+  left: 5rem;
+  width: calc(100% - 5rem);
   padding: 1rem;
   overflow: auto;
   transition: left 0.5s ease, width 0.5s ease;
   color: #fff;
 }
+
+ .inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.inicio img{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10rem;
+  border: solid 3px #00b5e8;
+  object-fit: cover;
+}
+h1{
+  font-size: 2.5rem; 
+  font-family: 'SourceCodePro-SemiBold';
+}
+
+
+
+.inicio-data-parraph{
+  font-size: 1.5rem;
+  font-family: 'Inconsolata_Condensed-Medium';
+}
+
+.inicio b {
+color: #00c8ff;
+}
+
 
 @media (max-width: 768px) {
   .sidebar {
@@ -214,21 +260,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
   }
 
-  .main-content {
+  main {
     top: 58px;
-    position: relative;
+    position: static;
     z-index: 10;
-    background-color: #323e48;
     height: calc(100% - 58px);
     left: 0;
     width: 100vw;
     padding: 1rem;
     opacity: 1;
     overflow: auto;
-   
+
 
   }
 
@@ -236,7 +280,7 @@
     z-index: 20;
     overflow: auto;
     font-size: 1.2em;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
@@ -275,8 +319,8 @@
     display: block;
   }
 
-  .sidebar.active ~ .main-content {
-    position: relative;
+  .sidebar.active ~ main {
+    position: absolute;
     left: 0;
     display: block;
     width: auto;

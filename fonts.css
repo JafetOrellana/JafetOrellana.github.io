@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SourceCodePro-SemiBold';
+    src: url(/fonts/SourceCodePro-SemiBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Inconsolata_Condensed-Medium';
+    src: url(/fonts/Inconsolata_Condensed-Medium.ttf);
+}

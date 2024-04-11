@@ -34,12 +34,6 @@ body{
 
 }
 
-.sidebar.active ~ main {
-  /* left: 200px;
-  width: calc(100% - 200px);
-  height: 100vh; */
-}
-
 .sidebar.active {
   width: 12.5rem;
   overflow-y: auto;
@@ -281,9 +275,17 @@ color: #00c8ff;
     padding: 1rem;
     opacity: 1;
     overflow: auto;
-
-
   }
+
+  
+  .inicio{
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+/* 
+  .sidebar.active ~ main {
+    overflow: hidden;
+  } */
 
   .sidebar.active {
     z-index: 20;
@@ -364,32 +366,4 @@ color: #00c8ff;
   }
 
 
-@keyframes slideDown-barBottom {
-  0% {
-    display: none;
-  }
-
-  1%{
-    display: flex;
-    transform: translateY(-100%);
-  }
-
-  100% {
-   transform: translateY(0%); 
-  }
-
-  
-}
-@keyframes slideUp-barBottom {
-0% {
-  display: block;
-
-}
-
-100% {
-  transform: translateY(-100%);
-  display: none;
-}
-
-}
 }

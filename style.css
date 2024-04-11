@@ -7,6 +7,7 @@
 
 body{
   min-width: 768px;
+  background: rgb(9,43,80);
 }
 
 .logo-img {
@@ -170,8 +171,9 @@ main {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 18rem;
+  margin-bottom: 18rem;
+
 }
 
 .inicio img{
@@ -181,6 +183,13 @@ main {
   border: solid 3px #00b5e8;
   object-fit: cover;
 }
+/* efecto para parrafos */
+/* .inicio-data{
+  background-color: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.2); 
+  border-radius: 1em;
+  padding: 2em;
+} */
 h1{
   font-size: 2.5rem; 
   font-family: 'SourceCodePro-SemiBold';
@@ -264,7 +273,7 @@ color: #00c8ff;
 
   main {
     top: 58px;
-    position: static;
+    position: absolute;
     z-index: 10;
     height: calc(100% - 58px);
     left: 0;
@@ -280,14 +289,16 @@ color: #00c8ff;
     z-index: 20;
     overflow: auto;
     font-size: 1.2em;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
     background-color: #12171e;
     padding: 0rem 0.8rem;
-    border-bottom: none;
+    border-bottom: 3px solid #00b5e8;
+
+
   }
 
   .sidebar.active .top{
@@ -325,7 +336,7 @@ color: #00c8ff;
     display: block;
     width: auto;
     overflow: auto;
-    top: 60px;  
+    top: 58px;  
   }
 
   .sidebar.active ul {

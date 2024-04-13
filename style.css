@@ -140,6 +140,8 @@ body{
 }
 /*Contenido principal*/
 main {
+  margin-left: 142px;
+  margin-right: 142px;
   top: 3.625rem;
   position: absolute;
   background: rgb(9,43,80);
@@ -160,13 +162,13 @@ main {
   color: #fff;
 }
 
- .inicio {
+.inicio {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
-  margin-top: 18rem;
-  margin-bottom: 18rem;
+  margin-top: 13rem;
+  margin-bottom: 13rem;
 
 }
 
@@ -194,11 +196,72 @@ h1{
 .inicio-data-parraph{
   font-size: 1.5rem;
   font-family: 'Inconsolata_Condensed-Medium';
+  max-width: 50rem;
+  word-wrap: break-word;
 }
 
 .inicio b {
 color: #00c8ff;
 }
+
+.proyectos{
+  display: flex;
+  flex-direction: column;
+}
+.proyect-data{
+  display: flex;
+  justify-content: center;
+}
+.proyect-data img{
+  width: 29rem;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.proyect-data-text{
+  margin-left: 2rem;
+  max-width: 27rem;
+  word-wrap: break-word;
+}
+
+.proyectos h2{
+  display: inline-flex;
+  column-gap: 0.75rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  color: #f3f4f6;
+}
+
+.proyect-data-tags{
+    list-style-type: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.proyect-data-tags li{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem;
+  height: 1.5rem;
+  background-color: #000000;
+  border-radius: 1rem; 
+  font-size: 0.75rem;
+}
+
+.proyect-data-tags li span {
+  /* color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem; */
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -282,6 +345,16 @@ color: #00c8ff;
     margin-top: 4rem;
     margin-bottom: 0rem;
   }
+
+  .inicio-data-parraph{
+    font-size: 1.2rem;
+  }
+
+  h1{
+    font-size: 2.25rem; 
+    font-family: 'SourceCodePro-SemiBold';
+  }
+  
 /* 
   .sidebar.active ~ main {
     overflow: hidden;

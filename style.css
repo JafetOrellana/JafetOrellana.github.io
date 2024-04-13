@@ -140,8 +140,6 @@ body{
 }
 /*Contenido principal*/
 main {
-  margin-left: 142px;
-  margin-right: 142px;
   top: 3.625rem;
   position: absolute;
   background: rgb(9,43,80);

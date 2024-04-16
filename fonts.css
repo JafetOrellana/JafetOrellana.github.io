@@ -22,11 +22,18 @@
 
 @font-face {
     font-family: 'RobotoMono-Light';
-    src: url(/font/RobotoMono-Light.ttf) format(truetype);
+    src: url(/fonts/RobotoMono-Light.ttf) format(truetype);
 
 }
 
 @font-face {
     font-family: 'SourceCodePro-Light';
     src: url(fonts/SourceCodePro-Light.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'RobotoMono-SemiBold';
+    src: url(fonts/RobotoMono-SemiBold.ttf) format(truetype); 
+    font-weight: bold;
+    font-style: bold;
 }

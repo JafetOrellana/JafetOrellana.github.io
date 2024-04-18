@@ -134,7 +134,7 @@ section {
   line-height: 1.8rem;
   z-index: 20;
   display: none;
-  /*solucionar problema con javascrpit*/
+  /* /solucionar problema con javascrpit/ */
 }
 
 .sidebar ul li:hover .tooltip {
@@ -147,7 +147,7 @@ section {
   display: none;
 }
 
-/*Contenido principal*/
+/* /Contenido principal/ */
 main {
   top: 3.625rem;
   position: absolute;
@@ -339,7 +339,7 @@ border: none;
   .sidebar {
     position: fixed;
     height: 58px;
-    width: 100vw;
+    width: 100%;
     background-color: #13181b;
     border-bottom: 3px solid #00b5e8;
     border-right: none;
@@ -404,7 +404,7 @@ border: none;
     z-index: 10;
     height: calc(100% - 58px);
     left: 0;
-    width: 100vw;
+    width: 100%;
     padding: 1rem;
     opacity: 1;
     overflow: auto;
@@ -432,14 +432,14 @@ border: none;
   } */
 
   .sidebar.active {
-    z-index: 20;
-    overflow: auto;
+    
+    overflow: hide;
     font-size: 1.2em;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-color: #12171e;
     padding: 0rem 0.8rem;
     border-bottom: 3px solid #00b5e8;
@@ -513,13 +513,15 @@ border: none;
   }
 
   .image-card{
-    width:94vw;
-    height: 25.6rem;
+    width:87vw;
+    height: 15em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .image-card img{
-  width: 90vw;
-  height: 23rem;
+  width: 83vw;
+  height: 14rem;
   object-fit: cover;
   border-radius: 1.5rem;
   translate: none;
@@ -527,14 +529,19 @@ border: none;
   }
 
   .image-card:hover img{
-    pointer-events: none;
-    
+    transform:translate(0rem , 0rem);
+    width: 83vw;
+    height: 14rem;
   }
 
   .proyect-data-text{
     max-width: none;
-    width:90vw;
-    height: 23rem;
+    width:80vw;
+    height: 20rem;
   }
+  
+  .proyectos footer a:hover{
+    border: solid 0.5px #f3f4f6;
+}
 
 }

@@ -368,7 +368,8 @@ padding-bottom: 5rem;
 }
 
 .githubsvg{
-  fill: #ebebeb !important;
+  width: 48px;
+  height: 48px;
 }
 @media (max-width: 768px) {
   .sidebar {

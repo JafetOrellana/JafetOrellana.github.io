@@ -406,8 +406,9 @@ padding-bottom: 5rem;
 }
 
 .sobreMi{
+  scroll-margin-top: 1rem;
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .sobreMi-data{
@@ -435,24 +436,6 @@ padding-bottom: 5rem;
   border: 3px solid #282929;
 }
 
-/* .contactar{
-  margin-top: 10rem;
-}
-
-.contactar-data{
-  display: flex;
-  flex-direction: column;
-
-}
-
-.contactar-data a{
-    text-decoration: none;
-    color: #fff;
-    font-family: 'SourceCodePro-Light';
-    margin-top: 2rem;
-
-} */
-
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -466,6 +449,10 @@ padding-bottom: 5rem;
     overflow: hidden;
     z-index: 20;
     padding: 0rem 0.8rem;
+  }
+
+  .sidebar ul li:hover .tooltip {
+    display: none;
   }
 
   .sidebar .nav-item {
@@ -561,7 +548,10 @@ padding-bottom: 5rem;
     padding: 0rem 0.8rem;
     border-bottom: 3px solid #00b5e8;
   }
-
+  .sidebar ul li a:hover {
+    background-color: transparent;
+    color: #fff;
+  }
   .sidebar.active .top {
     border-top: 0.4rem solid #12171e;
   }

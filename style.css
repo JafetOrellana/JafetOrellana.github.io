@@ -120,10 +120,12 @@ section {
 }
 
 .sidebar .nav-item {
+  display: none;
   opacity: 0;
 }
 
 .sidebar.active .nav-item {
+  display: block;
   opacity: 1;
 }
 

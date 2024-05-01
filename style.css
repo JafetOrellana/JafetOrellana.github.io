@@ -22,9 +22,9 @@ section {
 }
 
 .logo-img {
-  width: 3.125rem;
+  width: 3.5rem;
   border-radius: 100%;
-  border: 2px solid #00b5e8;
+  border: 2px solid #dbe6ea;
   background-color: rgb(255, 255, 255);
 }
 
@@ -39,9 +39,8 @@ section {
   padding: 0.4rem 0.8rem;
   transition: width 0.5s ease;
   white-space: nowrap;
-  /* overflow-y: auto;
-  overflow-x: hidden; */
   z-index: 1;
+  font-family: 'RobotoMono-Light';
 }
 
 .sidebar.active {
@@ -140,7 +139,6 @@ section {
   line-height: 1.8rem;
   z-index: 20;
   display: none;
-  /* /solucionar problema con javascrpit/ */
 }
 
 .sidebar ul li:hover .tooltip {

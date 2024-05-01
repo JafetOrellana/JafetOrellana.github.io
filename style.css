@@ -6,7 +6,7 @@
 
 body {
   min-width: 768px;
-  background: rgb(9, 43, 80);
+  background: rgb(255, 255, 255);
 }
 
 section {
@@ -149,25 +149,14 @@ section {
 
 /* /Contenido principal/ */
 main {
-  top: 3.625rem;
   position: absolute;
-  background: rgb(9, 43, 80);
-  background: linear-gradient(180deg,
-      rgba(9, 43, 80, 1) 0%,
-      rgba(2, 29, 59, 1) 16%,
-      rgba(2, 6, 23, 1) 100%);
-  height: calc(100% - 58px);
-  left: 0;
-  width: 100vw;
-  padding: 1rem;
+  background: linear-gradient(180deg, rgba(9, 43, 80, 1) 0%, rgb(1 24 50) 9%, rgba(2, 6, 23, 1) 100%);
   opacity: 1;
-  overflow: auto;
   min-height: 100vh;
   top: 0;
   left: 5rem;
   width: calc(100% - 5rem);
   padding: 1rem;
-  overflow: auto;
   transition: left 0.5s ease, width 0.5s ease;
   color: #fff;
 }
@@ -188,16 +177,49 @@ main {
   object-fit: cover;
 }
 
-/* efecto para parrafos */
-/* .inicio-data{
-  background-color: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.2); 
-  border-radius: 1em;
-  padding: 2em;
-} */
 h1 {
   font-size: 2.5rem;
   font-family: "SourceCodePro-SemiBold";
+}
+
+.direction a{
+  margin-top: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Inconsolata_Condensed-Medium";
+}
+
+.direction a:hover{
+  color: #c8c5c5;
+  text-decoration: underline;
+}
+
+.inicio-data footer{
+  display: flex;
+    gap: 0.5rem;
+    margin-top: 0.375rem;
+}
+
+.inicio-data footer a{
+  width: 2rem;
+    height: 2rem;
+    box-sizing: border-box;
+    color: #fff;
+    border: #d6d3d3 solid 1px;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.inicio-data footer a:hover{
+  background-color: #151b24;
 }
 /* PROYECTOS */
 .inicio-data-parraph {
@@ -371,6 +393,55 @@ padding-bottom: 5rem;
   width: 48px;
   height: 48px;
 }
+
+.sobreMi{
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.sobreMi-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.sobreMi-data p{
+  font-family: 'SourceCodePro-Light';
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.sobreMi-data p b{
+  color: #34c6ee;
+}
+
+.sobreMi img{
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 3px solid #282929;
+}
+
+/* .contactar{
+  margin-top: 10rem;
+}
+
+.contactar-data{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactar-data a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'SourceCodePro-Light';
+    margin-top: 2rem;
+
+} */
+
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -435,15 +506,17 @@ padding-bottom: 5rem;
   }
 /* CONTENIDO PRINCIPAL */
   main {
+    background-color:   linear-gradient(180deg, rgba(9, 43, 80, 1) 0%, rgb(1 24 50) 16%, rgba(2, 6, 23, 1) 100%);
     top: 58px;
     position: absolute;
     z-index: 10;
-    height: calc(100% - 58px);
+    height: 100%;
     left: 0;
     width: 100%;
     padding: 1rem;
     opacity: 1;
     overflow: auto;
+    min-height: 100vh;
   }
 /* INICIO */
   .inicio {
@@ -461,6 +534,7 @@ padding-bottom: 5rem;
     font-size: 2.25rem;
     font-family: "SourceCodePro-SemiBold";
   }
+
 
   /* 
   .sidebar.active ~ main {
@@ -514,7 +588,7 @@ padding-bottom: 5rem;
     left: 0;
     display: block;
     width: auto;
-    overflow: auto;
+    overflow: none;
     top: 58px;
   }
 
@@ -553,6 +627,7 @@ padding-bottom: 5rem;
     height: 15em;
     margin-left: auto;
     margin-right: auto;
+    max-width: 30rem;
   }
 
   .image-card img{
@@ -562,12 +637,14 @@ padding-bottom: 5rem;
   border-radius: 1.5rem;
   translate: none;
   transition: none; 
+  max-width: 29rem;
   }
 
   .image-card:hover img{
     transform:translate(0rem , 0rem);
     width: 83vw;
     height: 14rem;
+    max-width: 29rem;
   }
 
   .proyect-data-text{
@@ -578,6 +655,11 @@ padding-bottom: 5rem;
   
   .proyectos footer a:hover{
     border: solid 0.5px #f3f4f6;
+}
+
+.sobreMi-data{
+  flex-direction: column-reverse;
+
 }
 
 }

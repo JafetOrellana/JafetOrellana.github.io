@@ -26,32 +26,32 @@
             </div>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#inicio" class="aSidebar">
                         <i class="bx bx-home-alt-2"></i>
                         <span class="nav-item">Inicio</span>
                     </a>
                     <span class="tooltip">Inicio</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#proyectos" class="aSidebar">
+                        <i class="bx bx-code-alt"></i>
+                        <span class="nav-item">Proyectos</span>
+                    </a>
+                    <span class="tooltip">Proyectos</span>
+                </li>
+                <li>
+                    <a href="#habilidades" class="aSidebar">
+                        <i class="bx bxs-contact"></i>
+                        <span class="nav-item">Habilidades</span>
+                    </a>
+                    <span class="tooltip">Habilidades</span>
+                </li>
+                <li>
+                    <a href="#sobreMi" class="aSidebar">
                         <i class="bx bx-user"></i>
                         <span class="nav-item">Sobre mí</span>
                     </a>
                     <span class="tooltip">Sobre mí</span>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bx bx-code-alt"></i>
-                        <span class="nav-item">Proyetos</span>
-                    </a>
-                    <span class="tooltip">Proyetos</span>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bx bxs-contact"></i>
-                        <span class="nav-item">Contactar</span>
-                    </a>
-                    <span class="tooltip">Contactar</span>
                 </li>
             </ul>
         </div>
@@ -59,7 +59,7 @@
 
     <main>
         <div class="continer">
-            <section class="inicio">
+            <section class="inicio" id="inicio">
                 <div class="inicio-data">
                     <h1>Hola, soy Jafet Orellana.</h1>
                     <p class="inicio-data-parraph">
@@ -68,10 +68,31 @@
                         tecnologías y la construcción de experiencias amigables para el
                         usuario.
                     </p>
+                    <p class="direction">
+                        <a href="https://maps.app.goo.gl/tczYsQLYLRXLp4FJ9" target="_blank" rel="noopener noreferrer" title="dirección"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe size-3">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>Honduras, Cortés, Puerto Cortés</a>
+                    </p>
+                    <footer class="contact">
+                        <a href="mailto:orellanajafet507@gmail.com" title="gmail"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg></a>
+                        <a href="tel:+50499402853" title="teléfono"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg></a>
+                        <a href="https://github.com/JafetOrellana" target="_blank" rel="noopener noreferrer" title="github"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="size-4">
+                            <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                            </path>
+                        </svg></a>
+                    </footer>
                 </div>
                 <img src="public/foto.jpeg" alt="Foto de Jafet Orellana" title="Jafet Orellana" />
             </section>
-            <section class="proyectos">
+            <section class="proyectos" id="proyectos">
                 <h2><i class="bx bx-code-alt"></i>Proyectos</h2>
                 <div class="proyectos-flex">
                     <article class="proyect">
@@ -152,7 +173,7 @@
                     </article>
                 </div>
             </section>
-            <section class="habilidades">
+            <section class="habilidades" id="habilidades">
                 <h2>Habilidades</h2>
                 <div class="skills">
                     <ul class="technologies">
@@ -175,16 +196,92 @@
                     </ul>
                 </div>
             </section>
+            <section class="sobreMi" id="sobreMi">
+                <h2> <i class="bx bx-user"></i>Sobre mí</h2>
+                <div class="sobreMi-data">
+                    <p>
+                        ¡Hola! mi nombre es Jafet Orellana y soy un apasionado <b>desarrollador web</b> con sede en Honduras. 
+                        Actualmente estoy estudiando <b>Ingeniería en Sistemas en la Universidad Nacional Autónoma de Honduras en el Valle de Sula</b>,
+                        donde estoy adquiriendo conocimientos sólidos en áreas del desarrollo de software.
+                        <br><br>
+                        Mi viaje en el desarrollo web está en constante evolución, y actualmente estoy emocionado de estar aprendiendo 
+                        sobre el <b>backend</b> para complementar mis habilidades <b>frontend</b>. 
+                        Estoy explorando nuevas tecnologías como Node.js para construir aplicaciones web completas y robustas.
+                    </p>
+                        <img src="public/foto.jpeg" alt="Foto de Jafet Orellana" title="Jafet Orellana" />
+            </div>
+            <!-- </section>
+            <section class="contactar">
+                <h2> <i class="bx bxs-contact"></i> Contactar</h2>
+                <div class="contactar-data">
+                    <a href="mailto:orellanajafet507@gmail.com" title="Correo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        Correo: orellanajafet507@gmail.com</a>
+                    <a href="tel:+50499402853" title="teléfono">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                        </svg> 
+                        Teléfono: +504 99402853
+                    </a>
+                    <a href="https://github.com/JafetOrellana"  title="Github" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="size-4">
+                            <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                            </path>
+                        </svg>Github</a>
+                    
+                </div>
+            </section> -->
         </div>
     </main>
 </body>
 <script>
+    
+</script>
+<script>
     let btn = document.querySelector("#btn");
+    
     let sidebar = document.querySelector(".sidebar");
 
     btn.onclick = function () {
         sidebar.classList.toggle("active");
     };
+
+        
+    let aSidebars = document.querySelectorAll(".aSidebar");
+
+    aSidebars.forEach(function(aSidebar) {
+        aSidebar.onclick = function () {
+            sidebar.classList.remove("active");
+        };
+    });
+    
 </script>
+
+<script>
+    // Escuchar clics en enlaces del menú de navegación
+    document.querySelectorAll('.aSidebar').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+
+            const target = document.querySelector(this.getAttribute('href')); // Obtener el destino del enlace
+
+            // Calcular el desplazamiento necesario para centrar la sección en la vista
+            const offset = target.getBoundingClientRect().top + window.scrollY - (window.innerHeight / 2) + (target.offsetHeight / 2);
+
+            // Desplazar suavemente hasta la sección
+            window.scroll({
+                top: offset, // Ajustar el desplazamiento para centrar la sección
+                behavior: 'smooth'
+            });
+
+        });
+    });
+</script>
+
+
 
 </html>

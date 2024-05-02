@@ -458,6 +458,7 @@ padding-bottom: 5rem;
 
   .sidebar .nav-item {
     opacity: 1;
+    display: block;
   }
 
   .sidebar #btn {

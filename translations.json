@@ -1,0 +1,28 @@
+{
+    "es": {
+        "title": "Jafet Orellana",
+        "inicio": "Inicio",
+        "proyectos": "Proyectos",
+        "habilidades": "Habilidades",
+        "sobreMi": "Sobre mí",
+        "welcome": "Hola, soy Jafet Orellana.",
+        "description": "Soy estudiante de <b>Ingeniería en Sistemas</b> y <b>Desarrollador Web</b>. Apasionado por el aprendizaje de nuevas tecnologías y la construcción de experiencias amigables para el usuario.",
+        "location": "Honduras, Cortés, Puerto Cortés",
+        "projectTitle": "Clima UNAH",
+        "projectDescription": "Mi proyecto es una página web que ofrece información en tiempo real sobre el clima en los distintos campus de la Universidad Nacional Autónoma de Honduras (UNAH).",
+        "sobreMiTexto": "¡Hola! mi nombre es Jafet Orellana y soy un apasionado <b>desarrollador web</b> con sede en Honduras. Actualmente estoy estudiando <b>Ingeniería en Sistemas en la Universidad Nacional Autónoma de Honduras en el Valle de Sula</b>,donde estoy adquiriendo conocimientos sólidos en áreas del desarrollo de software.<br><br>Mi viaje en el desarrollo web está en constante evolución, y actualmente estoy emocionado de estar aprendiendo sobre el <b>backend</b> para complementar mis habilidades <b>frontend</b>. Estoy explorando nuevas tecnologías como Node.js para construir aplicaciones web completas y robustas."
+    },
+    "en": {
+        "title": "Jafet Orellana",
+        "inicio": "Home",
+        "proyectos": "Projects",
+        "habilidades": "Skills",
+        "sobreMi": "About Me",
+        "welcome": "Hello, I'm Jafet Orellana.",
+        "description": "I am a <b>Systems Engineering</b> student and a <b>Web Developer</b>. Passionate about learning new technologies and building user-friendly experiences.",
+        "location": "Honduras, Cortés, Puerto Cortés",
+        "projectTitle": "UNAH Weather",
+        "projectDescription": "My project is a website that provides real-time weather information for the different campuses of the National Autonomous University of Honduras (UNAH).",
+        "sobreMiTexto": "Hello! My name is Jafet Orellana, and I am a passionate <b>web developer</b> based in Honduras. I am currently studying <b>Systems Engineering at the National Autonomous University of Honduras in the Valle de Sula</b>, where I am acquiring solid knowledge in software development areas.<br><br>My journey in web development is constantly evolving, and I am currently excited to be learning about <b>backend</b> to complement my <b>frontend</b> skills. I am exploring new technologies like Node.js to build complete and robust web applications."
+    }
+}

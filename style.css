@@ -97,7 +97,8 @@ section {
   line-height: 3.125rem;
 }
 
-.sidebar ul li a {
+.sidebar ul li a,
+.sidebar ul li div {
   color: #fff;
   display: flex;
   align-items: center;
@@ -105,17 +106,21 @@ section {
   border-radius: 0.8rem;
 }
 
-.sidebar ul li a:hover {
+.sidebar ul li a:hover,
+.sidebar ul li div:hover {
   background-color: #fff;
   color: #12171e;
+  cursor: pointer;
 }
 
-.sidebar ul li a i {
+.sidebar ul li a i ,
+.sidebar ul li div i {
   min-width: 3.125rem;
   text-align: center;
   height: 3.125rem;
   border-radius: 0.75rem;
   line-height: 3.125rem;
+  font-size: 1.3rem;
 }
 
 .sidebar .nav-item {
@@ -177,11 +182,20 @@ main {
 }
 
 .inicio img {
-  height: 15rem;
   width: 15rem;
-  border-radius: 10rem;
-  border: solid 3px #00b5e8;
+  height: 15rem;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   object-fit: cover;
+  display: block;
+  margin: 20px auto;
+}
+
+.inicio img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -437,6 +451,10 @@ padding-bottom: 5rem;
   border: 3px solid #282929;
 }
 
+
+
+
+
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -526,6 +544,11 @@ padding-bottom: 5rem;
     flex-direction: column-reverse;
     margin-bottom: 10rem;
     gap: 2rem;
+  }
+
+  .inicio img {
+    width: 13rem;
+    height: 14rem;
   }
 
   .inicio-data-parraph {
